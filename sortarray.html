@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <p></p>
+</head>
+<body>
+    <script>
+         const arrayy_mon = ["March","Jan", "Dec", "Nov"];
+      const result = arrayy_mon.sort();
+      console.log(result);
+
+     const apps = document.querySelector('p');
+      for(let i = 0 ; i<result.length; i++){
+        let create = document.createElement('li');
+        create.textContent = result[i];
+        apps.append(create); 
+      }
+
+      const number= [1,30, 10000,90,28]
+      console.log(number.sort((a , b) => a - b)); 
+    </script>
+</body>
+</html>
